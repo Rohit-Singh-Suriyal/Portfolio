@@ -1,0 +1,194 @@
+.servicelist {
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+}
+.service span {
+    font-size: 2.5rem;
+}
+.service h1 {
+    color: rgb(202, 24, 24);
+    font-size: 2rem;
+}
+.service {
+    margin: 25px 23px;
+    background-color: rgb(65, 59, 59);
+    padding: 47px 58px;
+    border-radius: 18px;
+    transition: background 0.3s ease-in-out,transform 0.8s ease-in-out;
+}
+.worklist {
+    display: flex;
+    flex-direction: column;
+}
+
+.work img {
+    display: block;
+    box-sizing: border-box;
+    height: 368px;
+    width: 331px;
+    border-radius: 11px;
+    transition: transform,0.3s;
+}
+.h2 {
+    position: absolute;
+    margin: 64px 52px;
+    color: rgb(215 4 70);
+    font-weight: bold;
+    font-family: 'Lilita One', cursive;
+}
+#about .row {
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+}
+.row img {
+    margin-top: 3px;
+    height: 221px;
+    border-radius: 274px;
+    width: 218px;
+    margin-left: -39px;
+}
+.about-column-2 {
+    margin-left: -29px;
+    text-align: justify;
+    margin-right: -33px;
+    padding-bottom: 0px;
+    font-size:1.1rem;
+}
+.links {
+    margin: 0px -20px 0px 29px;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.3rem;
+}
+.tabs {
+    display: flex;
+    margin: 15px 0px 15px -35px;
+}
+.tab-contents ul li {
+    list-style: none;
+    margin: 0px;
+    text-align: left;
+}
+.active-tab {
+    display: block;
+    font-size: 1.3rem;
+}
+.work{
+position: relative;
+padding: 0px 0px;
+margin: 28px 27px;
+font-size: 1.5rem;
+}
+.container {
+    padding: 0px 12px;
+}
+#header ul li {
+display: block;
+padding: 27px 7px;
+font-size: 1.1rem;
+}
+.logo {
+    display: none;
+    height: 82px;
+    margin-top: 0px;
+}
+#header h1{
+    font-size:1.5rem;
+}
+.header-text {
+    text-shadow: horizontal-shadow vertical-shadow blur color;
+    font-size: 1.7rem;
+    margin: 24px 0px 0px 17px;
+}
+#header {
+    font-family: 'Lilita One', cursive;
+    width: 100%;
+    height: 64vh;
+    background: url(./images/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#about {
+    background: rgb(19, 18, 18);
+    padding: 29px 60px 0px 60px;
+    font-family: 'Poppins', sans-serif;
+}
+.layer{
+width: 106%;
+height: 0%;
+position: absolute;
+left: 0;
+bottom: 0;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 0px 0px;
+text-align: center;
+background: linear-gradient(rgba(0,0,0,0.6),rgb(179 33 94));
+font-family: 'Lilita One', cursive;
+transition: height,transform,0.5s;
+}
+.btn {
+    font-size: 1rem;
+    padding: 4px 8px;
+}
+.sub-title {
+    font-size: 2rem;
+    padding: 16px 0px 0px 0px;
+    color: rgb(128, 138, 138);
+}
+#contact .row {
+    display: flex;
+    flex-direction: column;
+}
+.contact-left {
+    flex-basis: 35%;
+    margin-left: 22px;
+}
+.contact-right {
+    width: 100%;
+    margin-left: 16px;
+    margin-top: -18px;
+}
+form input, form textarea {
+    width: 91%;
+    background-color: rgb(71, 69, 69);
+    padding: 9px 10px;
+    font-size: 1.1rem;
+    margin-top: 44px;
+    border: 0;
+    border-radius: 7px;
+}
+.copyright {
+    background-color: rgb(37, 36, 36);
+    padding: 6px 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.row img {
+    margin-top: 3px;
+    height: 167px;
+    border-radius: 274px;
+    width: 155px;
+    margin-left: -39px;
+}
+.sub-title {
+    font-size: 2rem;
+    padding: 16px 0px 0px 25px;
+    color: rgb(128, 138, 138);
+}
+
+.sub-title {
+    font-size: 2rem;
+    padding: 16px 0px 0px 27px;
+    color: rgb(128, 138, 138);
+}
+.heading{
+      color: rgb(128, 138, 138);
+      margin-left:3px ;
+}
+

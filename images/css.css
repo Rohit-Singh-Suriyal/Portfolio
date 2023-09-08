@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding:0;
+   
+    box-sizing: border-box;
+    color:white;
+    
+
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#header{
+    font-family: 'Lilita One', cursive;
+    width:100%;
+    height:100vh;
+    background:url('./images/1.jpg');
+    background-size:cover;
+    background-position: center;
+   
+}
+.logo{
+    display:block;
+    height:82px;
+    margin-top: 0px;;
+}
+.container{
+    padding:0px 76px;
+}
+
+.container nav{
+    display:flex;
+    justify-content:space-between;
+
+}
+#header ul{
+    display:flex;
+    list-style: none;
+    text-decoration: none;
+}
+#header ul li{
+    display: block;
+    
+    padding: 27px 41px;
+    font-size: 1.5rem;
+}
+#header ul li a{
+    text-decoration: none;
+    position: relative;
+}
+ul li  a::after{
+  content:'';
+  width:0;
+  height:3px;
+  background-color: red;
+  position: absolute;
+  left:0px;
+  bottom:-6px;
+ 
+
+}
+ul li a:hover{
+    color: rgb(217, 233, 247);
+}
+ul li a:hover::after{
+    width:100%;
+    transition: 0.5s linear;
+    cursor: pointer;
+    
+}
+
+.header-text .head{
+    color:rgb(215, 230, 243);
+    font-size:1.5rem;
+    margin:4px
+}
+.header-text{
+    text-shadow : horizontal-shadow vertical-shadow blur color;
+    font-size: 1.7rem;
+    margin: 269px 0px 0px -16px;
+}
+.span2{
+    color:red;
+}
+/* About Section */
+.row img{
+    margin-top:52px;
+    height: 456px;
+    border-radius: 294px;
+    width: 422px;
+    
+}
+#about{
+    background:rgb(19, 18, 18);
+    padding: 29px 0px 0px 0px;
+    font-family: 'Poppins', sans-serif;   
+
+}
+#about .row{
+    display: flex;
+    font-size:1.5rem;
+
+    
+
+    
+}
+.about-column-2{
+    margin-left: 130px;
+    text-align: justify;
+}
+.about-column-2 h1{
+    color:rgb(123, 133, 133)
+}
+.tabs{
+    display:flex;
+    margin:15px 0 15px;
+}
+.links{
+    margin:0 30px 0 0;
+    cursor: pointer;
+    position: relative;
+}
+ .tabs .links::after{
+  content:"";
+  left:0;
+  width:0;
+  height:3px;
+  background-color: red;
+  position:absolute;
+  bottom: -6px;
+  transition: 0.5s;
+
+}
+/* ///jisme do classe likhein hoon */
+.links.active-link::after{   
+    width:50%;
+} 
+.tab-contents{
+    margin-top: 18px;
+    display: none;
+    height:274px;
+}
+.tab-contents ul li{
+list-style: none;
+margin-right: 20px;
+border:1px solid white;
+padding:4px;
+}
+.tab-contents ul li span{
+    color:rgb(228, 36, 36);
+    font-size: 22px;
+    
+}
+.active-tab{
+    display: block;
+}
+
+/* Services------------------------ */
+#services{
+    background-color: rgb(8, 8, 8);
+
+}
+.sub-title{
+    font-size: 3rem;
+    padding: 16px 0px 0px 0px;
+    
+    color: rgb(128, 138, 138);
+    
+}
+.servicelist{
+    display:flex;
+    font-size:1.2rem;
+}
+.service{
+    margin: 35px 24px;
+    background-color: rgb(65, 59, 59);
+    padding: 45px 47px;
+    border-radius: 18px;
+    transition: background 0.3s ease-in-out,transform 0.8s ease-in-out;
+    width:50%;
+}
+.service h1{
+    color: rgb(216, 4, 4);
+    font-size:1.6rem;
+}
+.service a{
+    display: block;
+    color: rgb(153, 49, 185);
+    margin:12px 0px;
+    font-weight: bold;
+}
+.service span{
+    font-size:3rem;
+
+}
+.service:hover{
+    background: rgb(233, 12, 104);
+    transform:translateY(-10px)
+}
+/* *--------------#portfolio----------------* */
+#portfolio{
+    background-color: rgb(8, 8, 8);
+
+}
+.work img{
+    display: block;
+    box-sizing: border-box;
+    height: 328px;
+    width: 372px;
+    border-radius: 11px;
+    transition: transform,0.3s;
+}
+.work:hover img{
+    transform: scale(0.9);
+}
+
+.worklist{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.work{
+    
+        position: relative;
+        padding: 0px 0px;
+        margin: 26px 28px;
+        font-size: 1.5rem;
+
+
+}
+
+.h2{
+    position: absolute;
+    margin: 70px 116px;
+    color:rgb(215 4 70);
+    font-weight: bold;
+    font-family: 'Lilita One', cursive;
+}
+
+
+
+.layer{
+    width:100%;
+    height:0%;
+    position:absolute;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    display: flex;
+     flex-direction: column;
+align-items: center;
+justify-content: center;
+padding:0px 0px;
+text-align: center;
+background: linear-gradient(rgba(0,0,0,0.6),rgb(179 33 94));
+font-family: 'Lilita One', cursive;
+transition:height,transform,0.5s;
+    
+    
+
+
+}
+.work:hover .layer{
+    height:100%;
+    transform: scale(0.9);
+}
+.layer h3{
+    margin:10px 10px;
+    color:rgb(204, 6, 122);
+}
+.layer p{
+ font-size:1.3rem;
+}
+.layer a{
+    border: 2px solid white;
+    
+    
+    height: 48px;
+    
+    color: blue;
+    font-size: 1.4rem;
+    padding: 11px 10px;
+    border-radius: 50%;
+    background: white;
+    margin:27px 10px;
+    text-align:center;
+    
+}
+/* ----------------------------Contact Me--------------------- */
+#contact{
+    background-color: rgb(8, 8, 8);;
+}
+#contact .row{
+    display: flex;
+    justify-content:space-around ;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 65%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color:rgb(226, 48, 173);
+    font-size:20px;
+    padding-right: 10px;
+}
+.social-icons{
+    margin-top: 29px;
+    
+}
+.social-icons a {
+    margin-right: 25px;
+    font-size: 30px;
+    text-decoration: none;
+    
+    
+}
+.social-icons a i:hover{
+    transition: transform 0.5s;
+    color:rgb(226, 48, 173);
+    transform: translateY(-6px);
+}
+
+.btn2{
+    display: inline-block;
+    text-decoration: none;
+
+    color:white;
+    background-color: rgb(226, 48, 173);;
+    padding: 20px 54px;
+    border-radius: 10px;
+    margin: 37px 3px;
+}
+.btn2:hover{
+    background-color: black;
+    color:red;
+    
+}
+  
+.contact-right{
+    width:100%;
+}
+
+form input,form textarea{
+    width: 84%;
+    background-color: rgb(71, 69, 69);
+    padding: 18px 10px;
+    font-size: 1.1rem;
+    margin-top: 44px;
+    border: 0;
+    border-radius: 7px;
+    
+    
+}
+.btn{
+    
+    font-size: 1rem;
+    padding: 18px 59px;
+}
+.copyright{
+    background-color: rgb(37, 36, 36);
+    padding: 16px 10px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.copyright i{
+    color:rgb(226, 48, 173);
+}
+.heading{
+    padding:0px 0px;
+}
+#msg{
+    color: white;
+    margin-top: -21px;
+    display: block;
+    margin-bottom: 12px;
+    margin-left: 12px;
+}
+.ul{
+    display:flex;
+    flex-direction:column;
+}
+.ul li{
+    margin-right:5px;
+    margin-top:15px;
+}
+.ul li:hover{
+    background-color: rgb(131, 127, 127);
+    cursor:pointer;
+}
+.inner{
+    display:flex;
+}
+
+/* ---------------css-mediaquery------------- */
